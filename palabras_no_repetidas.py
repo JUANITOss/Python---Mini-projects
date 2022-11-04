@@ -1,3 +1,5 @@
+# Este programa utiliza a los sets para asegurarse de que una palabra no se repita en una frase.
+
 def limpiapalabras(palabra):
     
     i = 0
