@@ -1,3 +1,5 @@
+# Este programa cuenta la cantidad de vocales que se encuentran en una determinada frase :p
+
 def contarvocales(word):
     return {x : word.count(x) for x in word if x in "aeiou"}
 
