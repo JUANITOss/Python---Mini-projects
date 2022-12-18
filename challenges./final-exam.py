@@ -97,20 +97,26 @@ try:
         
         line = archBS.readline()
 
-    for items in dictProducts:
+    # for items in dictProducts:
 
-        products.append(items)
-        stock.append(dictProducts[items])
+    #     products.append(items)
+    #     stock.append(dictProducts[items])
 
-    bubblesort(stock, products)
+    # bubblesort(stock, products)
+
+    # for i in range(len(products)):
+
+    #     print(f"-> {stock[i]} unidades de {products[i]}\n")
 
     print("\nLISTADO DE STOCK DE PRODUCTOS\n")
 
-    for i in range(len(products)):
+    # Orders the dict of products by the index = 1 (value) pf the dictProducts.items() tuple list
 
-        print(f"-> {stock[i]} unidades de {products[i]}\n")
+    for k,v in sorted(dictProducts.items(), key=lambda tup: tup[1]):
+        print(f"-> {k}, con un stock de {v} productos")
 
-    print(f"\nEl total recaudado en el año 2009 es de: {totalOfYear}")
+
+    print(f"\nEl total recaudado en el año 2009 es de ${totalOfYear:.2f}")
 
 except FileNotFoundError as msg:
     print(f"El archivo no se ha encontrado. {msg}")
