@@ -112,7 +112,7 @@ try:
 
     # Orders the dict of products by the index = 1 (value) pf the dictProducts.items() tuple list
 
-    for k,v in sorted(dictProducts.items(), key=lambda tup: tup[1]):
+    for k,v in sorted(dictProducts.items(), key=lambda tupl: tupl[1]):
         print(f"-> {k}, con un stock de {v} productos")
 
 
